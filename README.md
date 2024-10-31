@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Demo PFM Web2
 
-## Getting Started
+Este es un proyecto de demostración de una aplicación web construida con **Next.js**. El objetivo principal de este proyecto es mostrar cómo construir una aplicación moderna utilizando tecnologías actuales.
 
-First, run the development server:
+## Tabla de Contenidos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Características](#características)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Instalación y Ejecución](#instalación-y-ejecución)
+- [Modelo-Vista-Controlador (MVC)](#modelo-vista-controlador-mvc)
+- [Modelo-Entidad-Relación](#modelo-entidad-relación)
+- [Casos de Uso](#casos-de-uso)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Características
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Aplicación web reactiva.
+- Interfaz de usuario optimizada.
+- Integración con API para el manejo de datos.
+- Optimización automática de fuentes.
 
-## Learn More
+## Tecnologías Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org) - Framework de React para aplicaciones web.
+- [TypeScript](https://www.typescriptlang.org) - Lenguaje de programación que mejora JavaScript.
+- [Tailwind CSS](https://tailwindcss.com) - Framework CSS para estilos rápidos y responsivos.
+- [Vercel](https://vercel.com) - Plataforma de despliegue para aplicaciones Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estructura del Proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![image](https://github.com/user-attachments/assets/0f608c48-c82b-4854-b099-4a8b9acb50fb)
 
-## Deploy on Vercel
+demo-pfm-web2/
+├── prisma/
+├── src/
+│ ├── app/
+│ ├── components/
+│ └── styles/
+├── .env
+├── package.json
+├── README.md
+└── tiendaweb2.db
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Instalación y Ejecución
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/codecrypto-academy/demo-pfm-web2.git
+
+2. Navega al directorio del proyecto:
+   ```bash
+   cd demo-pfm-web2
+
+3. Instala las dependencias:
+   ```bash
+   npm install
+   
+4. Ejecuta el servidor de desarrollo:
+   ```bash
+   npm run dev
+   
+5. Abre tu navegador en http://localhost:3000 para ver la aplicación en acción.
+
+
+## Modelo-Vista-Controlador (MVC)
+Este proyecto sigue el patrón de diseño MVC:
+
+Modelo: Define la estructura de los datos y la lógica de negocio. En este caso, se utilizan bases de datos para almacenar información en tiendaweb2.db.
+
+Vista: La interfaz de usuario que interactúa con el usuario final. Las vistas están construidas en la carpeta src/app/.
+
+Controlador: Maneja la lógica de la aplicación, interactuando con el modelo y actualizando la vista según sea necesario.
+
+
+## Modelo Entidad Relación
+
+![image](https://github.com/user-attachments/assets/d9eedf29-42c9-40be-a999-9463cb55b5dd)
+
+
+
+## Casos de Uso
+Registro de Usuarios: Permitir a los usuarios registrarse y almacenar sus datos en la base de datos.
+
+Inicio de Sesión: Autenticación de usuarios existentes para acceder a sus perfiles.
+
+Gestión de Productos: Los usuarios pueden agregar, editar y eliminar productos en la tienda.
+
+Visualización de Productos: Los usuarios pueden navegar y ver productos disponibles en la tienda.
+
+Carrito de Compras: Los usuarios pueden agregar productos a un carrito y proceder con la compra.
+
+
